@@ -1,0 +1,751 @@
+﻿2021-06-08 07:45:31.9940|Error|SAF.EnterpriseSolutions.DataAccess.Repository.FabMachineUsageRepository|SAF.EnterpriseSolutions.DataAccess.Repository.FabMachineUsageRepository+<SaveFabMachineEventAsync>d__18.MoveNext|auth::prod2|Error accessing SaveFabMachinesAsync : Nullable object must have a value.|System.InvalidOperationException Nullable object must have a value. Void ThrowInvalidOperationException(System.ExceptionResource)    at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+at SAF.EnterpriseSolutions.DataAccess.Repository.FabMachineUsageRepository.<>c.<SaveFabMachineEventAsync>b__18_4(FabMachineDetailItem j) in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\FabMachineUsageRepository.cs:line 816
+at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+at SAF.EnterpriseSolutions.DataAccess.Repository.FabMachineUsageRepository.<SaveFabMachineEventAsync>d__18.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\FabMachineUsageRepository.cs:line 816}
+2021-06-08 07:45:31.9940|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.FabMachineUsageController|SAF.EnterpriseSolutions.Web.Services.Controllers.FabMachineUsageController+<SaveFabMachineEvent>d__8.MoveNext|auth::prod2|Error api/FabMachineUsage/savefabmachineevent: Nullable object must have a value.|System.InvalidOperationException Nullable object must have a value. Void ThrowInvalidOperationException(System.ExceptionResource)    at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+at SAF.EnterpriseSolutions.DataAccess.Repository.FabMachineUsageRepository.<>c.<SaveFabMachineEventAsync>b__18_4(FabMachineDetailItem j) in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\FabMachineUsageRepository.cs:line 816
+at System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+at SAF.EnterpriseSolutions.DataAccess.Repository.FabMachineUsageRepository.<SaveFabMachineEventAsync>d__18.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\FabMachineUsageRepository.cs:line 928
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.Web.Services.Controllers.FabMachineUsageController.<SaveFabMachineEvent>d__8.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\FabMachineUsageController.cs:line 125}
+2021-06-08 08:14:32.3279|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.FabMachineUsageController|SAF.EnterpriseSolutions.Web.Services.Controllers.FabMachineUsageController+<SaveFabMachineEvent>d__8.MoveNext|auth::rcl|Error api/FabMachineUsage/savefabmachineevent: There was an error reflecting type 'SAF.EnterpriseSolutions.Domain.FabMachineUsage.FabMachineAddData'.|System.InvalidOperationException There was an error reflecting type 'SAF.EnterpriseSolutions.Domain.FabMachineUsage.FabMachineAddData'. System.Xml.Serialization.TypeMapping ImportTypeMapping(System.Xml.Serialization.TypeModel, System.String, ImportContext, System.String, System.Xml.Serialization.XmlAttributes, Boolean, Boolean, System.Xml.Serialization.RecursionLimiter)    at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+at System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
+at SAF.EnterpriseSolutions.DataAccess.Repository.FabMachineUsageRepository.<SaveFabMachineEventAsync>d__18.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\FabMachineUsageRepository.cs:line 915
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.Web.Services.Controllers.FabMachineUsageController.<SaveFabMachineEvent>d__8.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\FabMachineUsageController.cs:line 125|InvalidOperationException Cannot serialize member 'SAF.EnterpriseSolutions.Domain.FabMachineUsage.FabMachineAddData.Equipments' of type 'System.Collections.Generic.IEnumerable`1[[SAF.EnterpriseSolutions.Domain.FabMachineUsage.FabEquipment, SAF.EnterpriseSolutions.Domain, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null]]', see inner exception for more details. Void CheckSupportedMember(System.Xml.Serialization.TypeDesc, System.Reflection.MemberInfo, System.Type)    at System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+at System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+at System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+at System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+at System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)|NotSupportedException Cannot serialize member SAF.EnterpriseSolutions.Domain.FabMachineUsage.FabMachineAddData.Equipments of type System.Collections.Generic.IEnumerable`1[[SAF.EnterpriseSolutions.Domain.FabMachineUsage.FabEquipment, SAF.EnterpriseSolutions.Domain, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null]] because it is an interface.  }
+2021-06-08 08:28:40.1116|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.QuoteOptimizeController|SAF.EnterpriseSolutions.Web.Services.Controllers.QuoteOptimizeController+<Optimize>d__7.MoveNext|auth::jab|Error api/QuoteOptimize/optimize: The operation was canceled.|System.OperationCanceledException The operation was canceled. Void ThrowOperationCanceledException()    at System.Threading.CancellationToken.ThrowOperationCanceledException()
+at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+at SAF.EnterpriseSolutions.Business.QuoteOptimize.QuoteOptimizeService.<FabOptimizeAsync>d__5.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Business\QuoteOptimize\QuoteOptimizeService.cs:line 384
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.Business.QuoteOptimize.QuoteOptimizeService.<OptimizeAsync>d__4.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Business\QuoteOptimize\QuoteOptimizeService.cs:line 46
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.Web.Services.Controllers.QuoteOptimizeController.<Optimize>d__7.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\QuoteOptimizeController.cs:line 67}
+2021-06-08 08:36:14.3345|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.QuoteOptimizeController|SAF.EnterpriseSolutions.Web.Services.Controllers.QuoteOptimizeController+<Optimize>d__7.MoveNext|auth::jab|Error api/QuoteOptimize/optimize: The operation was canceled.|System.OperationCanceledException The operation was canceled. Void ThrowOperationCanceledException()    at System.Threading.CancellationToken.ThrowOperationCanceledException()
+at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+at SAF.EnterpriseSolutions.Business.QuoteOptimize.QuoteOptimizeService.<FabOptimizeAsync>d__5.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Business\QuoteOptimize\QuoteOptimizeService.cs:line 384
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.Business.QuoteOptimize.QuoteOptimizeService.<OptimizeAsync>d__4.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Business\QuoteOptimize\QuoteOptimizeService.cs:line 46
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.Web.Services.Controllers.QuoteOptimizeController.<Optimize>d__7.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\QuoteOptimizeController.cs:line 67}
+2021-06-08 08:59:21.4106|Error|SAF.EnterpriseSolutions.DataAccess.Repository.InvoiceRepository|SAF.EnterpriseSolutions.DataAccess.Repository.InvoiceRepository+<PrintOrFaxInvoice>d__74.MoveNext|auth::rrh|Error executing PrintOrFaxInvoice : There was no endpoint listening at http://printserver.saf.com/safprintserver2/SAFPrintServer2.svc that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details.|System.ServiceModel.EndpointNotFoundException There was no endpoint listening at http://printserver.saf.com/safprintserver2/SAFPrintServer2.svc that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details. TAsyncResult End[TAsyncResult](System.IAsyncResult)    at System.Runtime.AsyncResult.End[TAsyncResult](IAsyncResult result)
+at System.ServiceModel.Channels.ServiceChannel.SendAsyncResult.End(SendAsyncResult result)
+at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass6_0.<CreateTask>b__0(IAsyncResult asyncResult)
+at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.Business.Common.CommonService.<SoapPrintAsync>d__7.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Business\Common\CommonService.cs:line 248
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+at SAF.EnterpriseSolutions.DataAccess.Repository.InvoiceRepository.<PrintOrFaxInvoice>d__74.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\InvoiceRepository.cs:line 8517|WebException Unable to connect to the remote server System.IO.Stream EndGetRequestStream(System.IAsyncResult, System.Net.TransportContext ByRef)    at System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+at System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStreamAsyncResult.CompleteGetRequestStream(IAsyncResult result)|SocketException No connection could be made because the target machine actively refused it 10.0.0.164:80 Void InternalEndConnect(System.IAsyncResult)    at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)}
+2021-06-08 08:59:21.4106|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.InvoiceController|SAF.EnterpriseSolutions.Web.Services.Controllers.InvoiceController+<PrintOrFaxInvoice>d__23.MoveNext|auth::rrh|Error api/printorfaxinvoice: There was no endpoint listening at http://printserver.saf.com/safprintserver2/SAFPrintServer2.svc that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details.|System.ServiceModel.EndpointNotFoundException There was no endpoint listening at http://printserver.saf.com/safprintserver2/SAFPrintServer2.svc that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details. TAsyncResult End[TAsyncResult](System.IAsyncResult)    at System.Runtime.AsyncResult.End[TAsyncResult](IAsyncResult result)
+at System.ServiceModel.Channels.ServiceChannel.SendAsyncResult.End(SendAsyncResult result)
+at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass6_0.<CreateTask>b__0(IAsyncResult asyncResult)
+at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.Business.Common.CommonService.<SoapPrintAsync>d__7.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Business\Common\CommonService.cs:line 248
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+at SAF.EnterpriseSolutions.DataAccess.Repository.InvoiceRepository.<PrintOrFaxInvoice>d__74.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\InvoiceRepository.cs:line 8530
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.Web.Services.Controllers.InvoiceController.<PrintOrFaxInvoice>d__23.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\InvoiceController.cs:line 615|WebException Unable to connect to the remote server System.IO.Stream EndGetRequestStream(System.IAsyncResult, System.Net.TransportContext ByRef)    at System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+at System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStreamAsyncResult.CompleteGetRequestStream(IAsyncResult result)|SocketException No connection could be made because the target machine actively refused it 10.0.0.164:80 Void InternalEndConnect(System.IAsyncResult)    at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)}
+2021-06-08 08:59:55.2382|Error|SAF.EnterpriseSolutions.DataAccess.Repository.InvoiceRepository|SAF.EnterpriseSolutions.DataAccess.Repository.InvoiceRepository+<PrintOrFaxInvoice>d__74.MoveNext|auth::rrh|Error executing PrintOrFaxInvoice : There was no endpoint listening at http://printserver.saf.com/safprintserver2/SAFPrintServer2.svc that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details.|System.ServiceModel.EndpointNotFoundException There was no endpoint listening at http://printserver.saf.com/safprintserver2/SAFPrintServer2.svc that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details. TAsyncResult End[TAsyncResult](System.IAsyncResult)    at System.Runtime.AsyncResult.End[TAsyncResult](IAsyncResult result)
+at System.ServiceModel.Channels.ServiceChannel.SendAsyncResult.End(SendAsyncResult result)
+at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass6_0.<CreateTask>b__0(IAsyncResult asyncResult)
+at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.Business.Common.CommonService.<SoapPrintAsync>d__7.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Business\Common\CommonService.cs:line 248
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+at SAF.EnterpriseSolutions.DataAccess.Repository.InvoiceRepository.<PrintOrFaxInvoice>d__74.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\InvoiceRepository.cs:line 8517|WebException Unable to connect to the remote server System.IO.Stream EndGetRequestStream(System.IAsyncResult, System.Net.TransportContext ByRef)    at System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+at System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStreamAsyncResult.CompleteGetRequestStream(IAsyncResult result)|SocketException A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 10.0.0.164:80 Void InternalEndConnect(System.IAsyncResult)    at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)}
+2021-06-08 08:59:55.2382|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.InvoiceController|SAF.EnterpriseSolutions.Web.Services.Controllers.InvoiceController+<PrintOrFaxInvoice>d__23.MoveNext|auth::rrh|Error api/printorfaxinvoice: There was no endpoint listening at http://printserver.saf.com/safprintserver2/SAFPrintServer2.svc that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details.|System.ServiceModel.EndpointNotFoundException There was no endpoint listening at http://printserver.saf.com/safprintserver2/SAFPrintServer2.svc that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details. TAsyncResult End[TAsyncResult](System.IAsyncResult)    at System.Runtime.AsyncResult.End[TAsyncResult](IAsyncResult result)
+at System.ServiceModel.Channels.ServiceChannel.SendAsyncResult.End(SendAsyncResult result)
+at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass6_0.<CreateTask>b__0(IAsyncResult asyncResult)
+at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.Business.Common.CommonService.<SoapPrintAsync>d__7.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Business\Common\CommonService.cs:line 248
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+at SAF.EnterpriseSolutions.DataAccess.Repository.InvoiceRepository.<PrintOrFaxInvoice>d__74.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\InvoiceRepository.cs:line 8530
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.Web.Services.Controllers.InvoiceController.<PrintOrFaxInvoice>d__23.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\InvoiceController.cs:line 615|WebException Unable to connect to the remote server System.IO.Stream EndGetRequestStream(System.IAsyncResult, System.Net.TransportContext ByRef)    at System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+at System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStreamAsyncResult.CompleteGetRequestStream(IAsyncResult result)|SocketException A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 10.0.0.164:80 Void InternalEndConnect(System.IAsyncResult)    at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)}
+2021-06-08 10:12:29.0971|Error|SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository|SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository+<SaveAsync>d__24.MoveNext|auth::jab|Error SaveAsync: Object reference not set to an instance of an object.|System.NullReferenceException Object reference not set to an instance of an object. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<SaveAsync>d__24.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository.cs:line 1344}
+2021-06-08 10:12:29.1127|Error|SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository|SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository+<ImportSpreadsheetAsync>d__68.MoveNext|auth::jab|Error ImportSpreadsheetAsync : Object reference not set to an instance of an object.|System.NullReferenceException Object reference not set to an instance of an object. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<SaveAsync>d__24.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository.cs:line 1460
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<ImportSpreadsheetAsync>d__68.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository.cs:line 5930}
+2021-06-08 10:12:29.1127|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<ImportSpreadSheet>d__11.MoveNext|auth::jab|Error ImportSpreadSheet: Object reference not set to an instance of an object.|System.NullReferenceException Object reference not set to an instance of an object. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<SaveAsync>d__24.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository.cs:line 1460
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<ImportSpreadsheetAsync>d__68.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository.cs:line 5942
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<ImportSpreadSheet>d__11.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 284}
+2021-06-08 10:36:48.9891|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.QuoteOptimizeController|SAF.EnterpriseSolutions.Web.Services.Controllers.QuoteOptimizeController+<Optimize>d__7.MoveNext|auth::jab|Error api/QuoteOptimize/optimize: The operation was canceled.|System.OperationCanceledException The operation was canceled. Void ThrowOperationCanceledException()    at System.Threading.CancellationToken.ThrowOperationCanceledException()
+at SAF.EnterpriseSolutions.Business.QuoteOptimize.QuoteOptimizeService.<OptimizeAsync>d__4.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Business\QuoteOptimize\QuoteOptimizeService.cs:line 48
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.Web.Services.Controllers.QuoteOptimizeController.<Optimize>d__7.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\QuoteOptimizeController.cs:line 67}
+2021-06-08 10:45:40.3487|Error|SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository|SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository+<SaveAsync>d__24.MoveNext|auth::jab|Error SaveAsync: Object reference not set to an instance of an object.|System.NullReferenceException Object reference not set to an instance of an object. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<SaveAsync>d__24.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository.cs:line 1344}
+2021-06-08 10:45:40.3487|Error|SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository|SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository+<ImportSpreadsheetAsync>d__68.MoveNext|auth::jab|Error ImportSpreadsheetAsync : Object reference not set to an instance of an object.|System.NullReferenceException Object reference not set to an instance of an object. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<SaveAsync>d__24.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository.cs:line 1460
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<ImportSpreadsheetAsync>d__68.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository.cs:line 5930}
+2021-06-08 10:45:40.3487|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<ImportSpreadSheet>d__11.MoveNext|auth::jab|Error ImportSpreadSheet: Object reference not set to an instance of an object.|System.NullReferenceException Object reference not set to an instance of an object. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<SaveAsync>d__24.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository.cs:line 1460
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<ImportSpreadsheetAsync>d__68.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository.cs:line 5942
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<ImportSpreadSheet>d__11.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 284}
+2021-06-08 10:53:00.1352|Error|SAF.EnterpriseSolutions.DataAccess.Repository.CustomerRepository|SAF.EnterpriseSolutions.DataAccess.Repository.CustomerRepository+<ModifyContactAsync>d__19.MoveNext|auth::bkc|Error ModifyContactAsync : An error occurred while updating the entries. See the inner exception for details.|System.Data.Entity.Infrastructure.DbUpdateException An error occurred while updating the entries. See the inner exception for details. Void Throw()    at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.DataAccess.Repository.CustomerRepository.<ModifyContactAsync>d__19.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\CustomerRepository.cs:line 1642|UpdateException An error occurred while updating the entries. See the inner exception for details. Void MoveNext()    at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.<UpdateAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Objects.ObjectContext.<ExecuteInTransactionAsync>d__3d`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStoreAsync>d__39.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<ExecuteAsyncImplementation>d__9`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesInternalAsync>d__31.MoveNext()|SqlException Cannot insert duplicate key row in object 'dbo.Contacts' with unique index 'IX_tblContacts_EMail'. The duplicate key value is (cgosri@gluckplus.com).
+The statement has been terminated. System.Data.Common.DbDataReader <ExecuteDbDataReaderAsync>b__180_0(System.Threading.Tasks.Task`1[System.Data.SqlClient.SqlDataReader])    at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__180_0(Task`1 result)
+at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.<UpdateAsync>d__0.MoveNext()}
+2021-06-08 10:53:02.7159|Error|SAF.EnterpriseSolutions.DataAccess.Repository.CustomerRepository|SAF.EnterpriseSolutions.DataAccess.Repository.CustomerRepository+<ModifyContactAsync>d__19.MoveNext|auth::bkc|Error ModifyContactAsync : An error occurred while updating the entries. See the inner exception for details.|System.Data.Entity.Infrastructure.DbUpdateException An error occurred while updating the entries. See the inner exception for details. Void Throw()    at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.DataAccess.Repository.CustomerRepository.<ModifyContactAsync>d__19.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\CustomerRepository.cs:line 1642|UpdateException An error occurred while updating the entries. See the inner exception for details. Void MoveNext()    at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.<UpdateAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Objects.ObjectContext.<ExecuteInTransactionAsync>d__3d`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStoreAsync>d__39.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<ExecuteAsyncImplementation>d__9`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesInternalAsync>d__31.MoveNext()|SqlException Cannot insert duplicate key row in object 'dbo.Contacts' with unique index 'IX_tblContacts_EMail'. The duplicate key value is (cgosri@gluckplus.com).
+The statement has been terminated. System.Data.Common.DbDataReader <ExecuteDbDataReaderAsync>b__180_0(System.Threading.Tasks.Task`1[System.Data.SqlClient.SqlDataReader])    at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__180_0(Task`1 result)
+at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.<UpdateAsync>d__0.MoveNext()}
+2021-06-08 10:53:04.4840|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.QuoteOptimizeController|SAF.EnterpriseSolutions.Web.Services.Controllers.QuoteOptimizeController+<Optimize>d__7.MoveNext|auth::klp|Error api/QuoteOptimize/optimize: The operation was canceled.|System.OperationCanceledException The operation was canceled. Void ThrowOperationCanceledException()    at System.Threading.CancellationToken.ThrowOperationCanceledException()
+at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+at SAF.EnterpriseSolutions.Business.QuoteOptimize.QuoteOptimizeService.<FabOptimizeAsync>d__5.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Business\QuoteOptimize\QuoteOptimizeService.cs:line 321
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.Business.QuoteOptimize.QuoteOptimizeService.<OptimizeAsync>d__4.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Business\QuoteOptimize\QuoteOptimizeService.cs:line 46
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.Web.Services.Controllers.QuoteOptimizeController.<Optimize>d__7.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\QuoteOptimizeController.cs:line 67}
+2021-06-08 10:54:07.2707|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.QuoteOptimizeController|SAF.EnterpriseSolutions.Web.Services.Controllers.QuoteOptimizeController+<Optimize>d__7.MoveNext|auth::klp|Error api/QuoteOptimize/optimize: The operation was canceled.|System.OperationCanceledException The operation was canceled. Void ThrowOperationCanceledException()    at System.Threading.CancellationToken.ThrowOperationCanceledException()
+at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+at SAF.EnterpriseSolutions.Business.QuoteOptimize.QuoteOptimizeService.<FabOptimizeAsync>d__5.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Business\QuoteOptimize\QuoteOptimizeService.cs:line 321
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.Business.QuoteOptimize.QuoteOptimizeService.<OptimizeAsync>d__4.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Business\QuoteOptimize\QuoteOptimizeService.cs:line 46
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.Web.Services.Controllers.QuoteOptimizeController.<Optimize>d__7.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\QuoteOptimizeController.cs:line 67}
+2021-06-08 12:02:49.4829|Error|SAF.EnterpriseSolutions.DataAccess.Repository.ShipperRepository|SAF.EnterpriseSolutions.DataAccess.Repository.ShipperRepository+<SetPackingUnitShipperAsync>d__30.MoveNext|auth::vjb|Error SetPackingUnitShipperAsync: An error occurred while reading from the store provider's data reader. See the inner exception for details.|System.Data.Entity.Core.EntityCommandExecutionException An error occurred while reading from the store provider's data reader. See the inner exception for details. Void HandleReaderException(System.Exception)    at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.HandleReaderException(Exception e)
+at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.<StoreReadAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.<MoveNextAsync>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Internal.LazyAsyncEnumerator`1.<FirstMoveNextAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Infrastructure.IDbAsyncEnumerableExtensions.<SingleAsync>d__2d`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+at SAF.EnterpriseSolutions.DataAccess.Repository.ShipperRepository.<SetPackingUnitShipperAsync>d__30.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ShipperRepository.cs:line 1608|SqlException Transaction (Process ID 65) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction. Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+at System.Data.SqlClient.SqlDataReader.<>c__DisplayClass189_0.<ReadAsync>b__0(Task t)
+at System.Data.SqlClient.SqlDataReader.InvokeRetryable[T](Func`2 moreFunc, TaskCompletionSource`1 source, IDisposable objectToDispose)
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.<StoreReadAsync>d__0.MoveNext()}
+2021-06-08 12:02:49.4985|Error|SAF.EnterpriseSolutions.DataAccess.Repository.ShipperRepository|SAF.EnterpriseSolutions.DataAccess.Repository.ShipperRepository+<AddShipperAsync>d__27.MoveNext|auth::vjb|Error AddShipperAsync: An error occurred while reading from the store provider's data reader. See the inner exception for details.|System.Data.Entity.Core.EntityCommandExecutionException An error occurred while reading from the store provider's data reader. See the inner exception for details. Void HandleReaderException(System.Exception)    at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.HandleReaderException(Exception e)
+at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.<StoreReadAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.SimpleEnumerator.<MoveNextAsync>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Internal.LazyAsyncEnumerator`1.<FirstMoveNextAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Infrastructure.IDbAsyncEnumerableExtensions.<SingleAsync>d__2d`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+at SAF.EnterpriseSolutions.DataAccess.Repository.ShipperRepository.<SetPackingUnitShipperAsync>d__30.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ShipperRepository.cs:line 1671
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+at SAF.EnterpriseSolutions.DataAccess.Repository.ShipperRepository.<AddShipperAsync>d__27.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ShipperRepository.cs:line 1433|SqlException Transaction (Process ID 65) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction. Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+at System.Data.SqlClient.SqlDataReader.<>c__DisplayClass189_0.<ReadAsync>b__0(Task t)
+at System.Data.SqlClient.SqlDataReader.InvokeRetryable[T](Func`2 moreFunc, TaskCompletionSource`1 source, IDisposable objectToDispose)
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Common.Internal.Materialization.Shaper`1.<StoreReadAsync>d__0.MoveNext()}
+2021-06-08 12:52:31.2272|Error|SAF.EnterpriseSolutions.DataAccess.Repository.CoilRepository|SAF.EnterpriseSolutions.DataAccess.Repository.CoilRepository+<DeleteCoilAsync>d__23.MoveNext|auth::rth|Error DeleteCoilAsync: Cannot delete inventory coil with more than one event.|System.Exception Cannot delete inventory coil with more than one event. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.CoilRepository.<DeleteCoilAsync>d__23.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\CoilRepository.cs:line 3124}
+2021-06-08 12:52:31.2272|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.CoilController|SAF.EnterpriseSolutions.Web.Services.Controllers.CoilController+<Delete>d__17.MoveNext|auth::rth|Error api/Coil/Delete: Cannot delete inventory coil with more than one event.|System.Exception Cannot delete inventory coil with more than one event. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.CoilRepository.<DeleteCoilAsync>d__23.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\CoilRepository.cs:line 3253
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.Web.Services.Controllers.CoilController.<Delete>d__17.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\CoilController.cs:line 267}
+2021-06-08 13:17:12.9823|Error|SAF.EnterpriseSolutions.DataAccess.Repository.InvoiceRepository|SAF.EnterpriseSolutions.DataAccess.Repository.InvoiceRepository+<SaveTrialInvoice>d__63.MoveNext|auth::jgc|Error executing SaveTrialInvoice : Pro Number is required for Shipper(s): SAF.EnterpriseSolutions.Domain.Shipper.Shipper|System.InvalidOperationException Pro Number is required for Shipper(s): SAF.EnterpriseSolutions.Domain.Shipper.Shipper Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.InvoiceRepository.<SaveTrialInvoice>d__63.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\InvoiceRepository.cs:line 5390}
+2021-06-08 13:17:12.9979|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.InvoiceController|SAF.EnterpriseSolutions.Web.Services.Controllers.InvoiceController+<SaveTrialInvoice>d__19.MoveNext|auth::jgc|Error api/savetrialinvoice: Pro Number is required for Shipper(s): SAF.EnterpriseSolutions.Domain.Shipper.Shipper|System.InvalidOperationException Pro Number is required for Shipper(s): SAF.EnterpriseSolutions.Domain.Shipper.Shipper Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.InvoiceRepository.<SaveTrialInvoice>d__63.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\InvoiceRepository.cs:line 6515
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.Web.Services.Controllers.InvoiceController.<SaveTrialInvoice>d__19.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\InvoiceController.cs:line 502}
+2021-06-08 13:29:51.1914|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.QuoteOptimizeController|SAF.EnterpriseSolutions.Web.Services.Controllers.QuoteOptimizeController+<Optimize>d__7.MoveNext|auth::jab|Error api/QuoteOptimize/optimize: The operation was canceled.|System.OperationCanceledException The operation was canceled. Void ThrowOperationCanceledException()    at System.Threading.CancellationToken.ThrowOperationCanceledException()
+at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+at SAF.EnterpriseSolutions.Business.QuoteOptimize.QuoteOptimizeService.<FabOptimizeAsync>d__5.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Business\QuoteOptimize\QuoteOptimizeService.cs:line 384
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.Business.QuoteOptimize.QuoteOptimizeService.<OptimizeAsync>d__4.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Business\QuoteOptimize\QuoteOptimizeService.cs:line 46
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.Web.Services.Controllers.QuoteOptimizeController.<Optimize>d__7.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\QuoteOptimizeController.cs:line 67}
+2021-06-08 13:31:17.3723|Error|SAF.EnterpriseSolutions.DataAccess.Repository.ShipperRepository|SAF.EnterpriseSolutions.DataAccess.Repository.ShipperRepository+<DeleteShipperAsync>d__25.MoveNext|auth::prod2|Error DeleteShipperAsync: An error occurred while updating the entries. See the inner exception for details.|System.Data.Entity.Infrastructure.DbUpdateException An error occurred while updating the entries. See the inner exception for details. Void Throw()    at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.DataAccess.Repository.ShipperRepository.<DeleteShipperAsync>d__25.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ShipperRepository.cs:line 1094|UpdateException An error occurred while updating the entries. See the inner exception for details. Void MoveNext()    at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.<UpdateAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Objects.ObjectContext.<ExecuteInTransactionAsync>d__3d`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStoreAsync>d__39.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<ExecuteAsyncImplementation>d__9`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesInternalAsync>d__31.MoveNext()|SqlException Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction. Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+at System.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, String endMethod, Boolean isInternal)
+at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.<UpdateAsync>d__0.MoveNext()}
+2021-06-08 13:31:17.3723|Error|SAF.EnterpriseSolutions.DataAccess.Repository.ShipperRepository|SAF.EnterpriseSolutions.DataAccess.Repository.ShipperRepository+<GetNextNumberAsync>d__26.MoveNext|auth::prod2|Error GetNextNumberAsync: An error occurred while updating the entries. See the inner exception for details.|System.Data.Entity.Infrastructure.DbUpdateException An error occurred while updating the entries. See the inner exception for details. Void Throw()    at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.DataAccess.Repository.ShipperRepository.<DeleteShipperAsync>d__25.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ShipperRepository.cs:line 1113
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at SAF.EnterpriseSolutions.DataAccess.Repository.ShipperRepository.<GetNextNumberAsync>d__26.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ShipperRepository.cs:line 1160|UpdateException An error occurred while updating the entries. See the inner exception for details. Void MoveNext()    at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.<UpdateAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Objects.ObjectContext.<ExecuteInTransactionAsync>d__3d`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStoreAsync>d__39.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<ExecuteAsyncImplementation>d__9`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesInternalAsync>d__31.MoveNext()|SqlException Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction. Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+at System.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, String endMethod, Boolean isInternal)
+at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.<UpdateAsync>d__0.MoveNext()}
+2021-06-08 13:31:17.3723|Error|SAF.EnterpriseSolutions.DataAccess.Repository.ShipperRepository|SAF.EnterpriseSolutions.DataAccess.Repository.ShipperRepository+<AddShipperAsync>d__27.MoveNext|auth::prod2|Error AddShipperAsync: An error occurred while updating the entries. See the inner exception for details.|System.Data.Entity.Infrastructure.DbUpdateException An error occurred while updating the entries. See the inner exception for details. Void Throw()    at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.DataAccess.Repository.ShipperRepository.<DeleteShipperAsync>d__25.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ShipperRepository.cs:line 1113
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at SAF.EnterpriseSolutions.DataAccess.Repository.ShipperRepository.<GetNextNumberAsync>d__26.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ShipperRepository.cs:line 1178
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+at SAF.EnterpriseSolutions.DataAccess.Repository.ShipperRepository.<AddShipperAsync>d__27.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ShipperRepository.cs:line 1279|UpdateException An error occurred while updating the entries. See the inner exception for details. Void MoveNext()    at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.<UpdateAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Objects.ObjectContext.<ExecuteInTransactionAsync>d__3d`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStoreAsync>d__39.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<ExecuteAsyncImplementation>d__9`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesInternalAsync>d__31.MoveNext()|SqlException Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction. Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+at System.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, String endMethod, Boolean isInternal)
+at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.<UpdateAsync>d__0.MoveNext()}
+2021-06-08 13:31:34.8883|Error|SAF.EnterpriseSolutions.DataAccess.Repository.ShipperRepository|SAF.EnterpriseSolutions.DataAccess.Repository.ShipperRepository+<DeleteShipperAsync>d__25.MoveNext|auth::prod2|Error DeleteShipperAsync: An error occurred while updating the entries. See the inner exception for details.|System.Data.Entity.Infrastructure.DbUpdateException An error occurred while updating the entries. See the inner exception for details. Void Throw()    at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.DataAccess.Repository.ShipperRepository.<DeleteShipperAsync>d__25.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ShipperRepository.cs:line 1094|UpdateException An error occurred while updating the entries. See the inner exception for details. Void MoveNext()    at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.<UpdateAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Objects.ObjectContext.<ExecuteInTransactionAsync>d__3d`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStoreAsync>d__39.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<ExecuteAsyncImplementation>d__9`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesInternalAsync>d__31.MoveNext()|SqlException Transaction (Process ID 66) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction. Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+at System.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, String endMethod, Boolean isInternal)
+at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.<UpdateAsync>d__0.MoveNext()}
+2021-06-08 13:31:34.8883|Error|SAF.EnterpriseSolutions.DataAccess.Repository.ShipperRepository|SAF.EnterpriseSolutions.DataAccess.Repository.ShipperRepository+<GetNextNumberAsync>d__26.MoveNext|auth::prod2|Error GetNextNumberAsync: An error occurred while updating the entries. See the inner exception for details.|System.Data.Entity.Infrastructure.DbUpdateException An error occurred while updating the entries. See the inner exception for details. Void Throw()    at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.DataAccess.Repository.ShipperRepository.<DeleteShipperAsync>d__25.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ShipperRepository.cs:line 1113
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at SAF.EnterpriseSolutions.DataAccess.Repository.ShipperRepository.<GetNextNumberAsync>d__26.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ShipperRepository.cs:line 1160|UpdateException An error occurred while updating the entries. See the inner exception for details. Void MoveNext()    at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.<UpdateAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Objects.ObjectContext.<ExecuteInTransactionAsync>d__3d`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStoreAsync>d__39.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<ExecuteAsyncImplementation>d__9`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesInternalAsync>d__31.MoveNext()|SqlException Transaction (Process ID 66) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction. Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+at System.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, String endMethod, Boolean isInternal)
+at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.<UpdateAsync>d__0.MoveNext()}
+2021-06-08 13:31:34.8883|Error|SAF.EnterpriseSolutions.DataAccess.Repository.ShipperRepository|SAF.EnterpriseSolutions.DataAccess.Repository.ShipperRepository+<AddShipperAsync>d__27.MoveNext|auth::prod2|Error AddShipperAsync: An error occurred while updating the entries. See the inner exception for details.|System.Data.Entity.Infrastructure.DbUpdateException An error occurred while updating the entries. See the inner exception for details. Void Throw()    at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.DataAccess.Repository.ShipperRepository.<DeleteShipperAsync>d__25.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ShipperRepository.cs:line 1113
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at SAF.EnterpriseSolutions.DataAccess.Repository.ShipperRepository.<GetNextNumberAsync>d__26.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ShipperRepository.cs:line 1178
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+at SAF.EnterpriseSolutions.DataAccess.Repository.ShipperRepository.<AddShipperAsync>d__27.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ShipperRepository.cs:line 1279|UpdateException An error occurred while updating the entries. See the inner exception for details. Void MoveNext()    at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.<UpdateAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Objects.ObjectContext.<ExecuteInTransactionAsync>d__3d`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStoreAsync>d__39.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<ExecuteAsyncImplementation>d__9`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesInternalAsync>d__31.MoveNext()|SqlException Transaction (Process ID 66) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction. Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+at System.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, String endMethod, Boolean isInternal)
+at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.<UpdateAsync>d__0.MoveNext()}
+2021-06-08 14:11:21.4493|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<Save>d__6.MoveNext|auth::hnc|Error api/ComplexFabQuote/save: Input string '0.13' is not a valid integer. Path 'line.quantity', line 1, position 1044.|Newtonsoft.Json.JsonReaderException Input string '0.13' is not a valid integer. Path 'line.quantity', line 1, position 1044. Void ParseReadNumber(Newtonsoft.Json.ReadType, Char, Int32)    at Newtonsoft.Json.JsonTextReader.ParseReadNumber(ReadType readType, Char firstChar, Int32 initialPosition)
+at Newtonsoft.Json.JsonTextReader.ReadNumberValue(ReadType readType)
+at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
+at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<Save>d__6.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 72}
+2021-06-08 14:11:35.7209|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<Save>d__6.MoveNext|auth::hnc|Error api/ComplexFabQuote/save: Input string '0.13' is not a valid integer. Path 'line.quantity', line 1, position 1044.|Newtonsoft.Json.JsonReaderException Input string '0.13' is not a valid integer. Path 'line.quantity', line 1, position 1044. Void ParseReadNumber(Newtonsoft.Json.ReadType, Char, Int32)    at Newtonsoft.Json.JsonTextReader.ParseReadNumber(ReadType readType, Char firstChar, Int32 initialPosition)
+at Newtonsoft.Json.JsonTextReader.ReadNumberValue(ReadType readType)
+at Newtonsoft.Json.JsonTextReader.ReadAsInt32()
+at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<Save>d__6.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 72}
+2021-06-08 14:33:04.2285|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.QuoteOptimizeController|SAF.EnterpriseSolutions.Web.Services.Controllers.QuoteOptimizeController+<Optimize>d__7.MoveNext|auth::aeh|Error api/QuoteOptimize/optimize: The operation was canceled.|System.OperationCanceledException The operation was canceled. Void ThrowOperationCanceledException()    at System.Threading.CancellationToken.ThrowOperationCanceledException()
+at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+at SAF.EnterpriseSolutions.Business.QuoteOptimize.QuoteOptimizeService.<FabOptimizeAsync>d__5.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Business\QuoteOptimize\QuoteOptimizeService.cs:line 321
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.Business.QuoteOptimize.QuoteOptimizeService.<OptimizeAsync>d__4.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Business\QuoteOptimize\QuoteOptimizeService.cs:line 46
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.Web.Services.Controllers.QuoteOptimizeController.<Optimize>d__7.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\QuoteOptimizeController.cs:line 67}
+2021-06-08 14:50:59.7318|Warn|SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository|SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository+<AddProgressMarkerAsync>d__6.MoveNext|auth::prod2|Missing Event Action : ParmRollers.  Not found in luEventActions Table.  Attempted to add it to eventGuid 713f636a-32ff-4921-b360-ba3c50b43479|}
+2021-06-08 14:50:59.7318|Error|SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository|SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository+<AddProgressMarkerAsync>d__6.MoveNext|auth::prod2|Error AddProgressMarkerAsync : Object reference not set to an instance of an object.|System.NullReferenceException Object reference not set to an instance of an object. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository.<AddProgressMarkerAsync>d__6.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\WorkFlowRepository.cs:line 570}
+2021-06-08 14:50:59.7318|Error|SAF.EnterpriseSolutions.DataAccess.Repository.FabMachineUsageRepository|SAF.EnterpriseSolutions.DataAccess.Repository.FabMachineUsageRepository+<SaveFabMachineEventAsync>d__18.MoveNext|auth::prod2|Error accessing AddFabMachinesAsync Work Flows and timed events : Object reference not set to an instance of an object.|System.NullReferenceException Object reference not set to an instance of an object. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository.<AddProgressMarkerAsync>d__6.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\WorkFlowRepository.cs:line 603
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+at SAF.EnterpriseSolutions.DataAccess.Repository.FabMachineUsageRepository.<SaveFabMachineEventAsync>d__18.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\FabMachineUsageRepository.cs:line 894}
+2021-06-08 14:54:29.8992|Error|SAF.EnterpriseSolutions.DataAccess.Repository.ChRobinsonRepository|SAF.EnterpriseSolutions.DataAccess.Repository.ChRobinsonRepository+<SetFreightAddersAsync>d__9.MoveNext|auth::bkc|Error accessing GetFreightAdderAsync: An error occurred while updating the entries. See the inner exception for details.|System.Data.Entity.Infrastructure.DbUpdateException An error occurred while updating the entries. See the inner exception for details. Void Throw()    at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+at SAF.EnterpriseSolutions.DataAccess.Repository.ChRobinsonRepository.<SetFreightAddersAsync>d__9.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ChRobinsonRepository.cs:line 904|UpdateException An error occurred while updating the entries. See the inner exception for details. Void MoveNext()    at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.<UpdateAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Objects.ObjectContext.<ExecuteInTransactionAsync>d__3d`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStoreAsync>d__39.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<ExecuteAsyncImplementation>d__9`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesInternalAsync>d__31.MoveNext()|SqlException Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding. System.Data.Common.DbDataReader <ExecuteDbDataReaderAsync>b__180_0(System.Threading.Tasks.Task`1[System.Data.SqlClient.SqlDataReader])    at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__180_0(Task`1 result)
+at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.<UpdateAsync>d__0.MoveNext()|Win32Exception The wait operation timed out  }
+2021-06-08 14:54:29.8992|Error|SAF.EnterpriseSolutions.DataAccess.Repository.ExtQuoteRepository|SAF.EnterpriseSolutions.DataAccess.Repository.ExtQuoteRepository+<SaveAsync>d__5.MoveNext|auth::bkc|Error executing SaveAsync list: An error occurred while updating the entries. See the inner exception for details.|System.Data.Entity.Infrastructure.DbUpdateException An error occurred while updating the entries. See the inner exception for details. Void Throw()    at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+at SAF.EnterpriseSolutions.DataAccess.Repository.ChRobinsonRepository.<SetFreightAddersAsync>d__9.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ChRobinsonRepository.cs:line 928
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.Business.Shipper.ChRobinsonService.<SetFreightAddersAsync>d__6.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Business\Shipper\ChRobinsonService.cs:line 58
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+at SAF.EnterpriseSolutions.DataAccess.Repository.ExtQuoteRepository.<SaveAsync>d__5.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ExtQuoteRepository.cs:line 192|UpdateException An error occurred while updating the entries. See the inner exception for details. Void MoveNext()    at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.<UpdateAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Objects.ObjectContext.<ExecuteInTransactionAsync>d__3d`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStoreAsync>d__39.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<ExecuteAsyncImplementation>d__9`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesInternalAsync>d__31.MoveNext()|SqlException Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding. System.Data.Common.DbDataReader <ExecuteDbDataReaderAsync>b__180_0(System.Threading.Tasks.Task`1[System.Data.SqlClient.SqlDataReader])    at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__180_0(Task`1 result)
+at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.<UpdateAsync>d__0.MoveNext()|Win32Exception The wait operation timed out  }
+2021-06-08 14:54:29.8992|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ExtQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ExtQuoteController+<Save>d__5.MoveNext|auth::bkc|Error api/ExtQuote/save: An error occurred while updating the entries. See the inner exception for details.|System.Data.Entity.Infrastructure.DbUpdateException An error occurred while updating the entries. See the inner exception for details. Void Throw()    at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+at SAF.EnterpriseSolutions.DataAccess.Repository.ChRobinsonRepository.<SetFreightAddersAsync>d__9.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ChRobinsonRepository.cs:line 928
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.Business.Shipper.ChRobinsonService.<SetFreightAddersAsync>d__6.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Business\Shipper\ChRobinsonService.cs:line 58
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+at SAF.EnterpriseSolutions.DataAccess.Repository.ExtQuoteRepository.<SaveAsync>d__5.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ExtQuoteRepository.cs:line 267
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at SAF.EnterpriseSolutions.Web.Services.Controllers.ExtQuoteController.<Save>d__5.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ExtQuoteController.cs:line 65|UpdateException An error occurred while updating the entries. See the inner exception for details. Void MoveNext()    at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.<UpdateAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Objects.ObjectContext.<ExecuteInTransactionAsync>d__3d`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStoreAsync>d__39.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<ExecuteAsyncImplementation>d__9`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesInternalAsync>d__31.MoveNext()|SqlException Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding. System.Data.Common.DbDataReader <ExecuteDbDataReaderAsync>b__180_0(System.Threading.Tasks.Task`1[System.Data.SqlClient.SqlDataReader])    at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__180_0(Task`1 result)
+at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.<UpdateAsync>d__0.MoveNext()|Win32Exception The wait operation timed out  }
+2021-06-08 16:21:25.1935|Warn|SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository|SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository+<AddProgressMarkerAsync>d__6.MoveNext|auth::prod2|Missing Event Action : CNC Router (AXYZ PanelBuilder).  Not found in luEventActions Table.  Attempted to add it to eventGuid 77608273-018e-4f1e-94fc-03b3eb6a5796|}
+2021-06-08 16:21:25.1935|Error|SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository|SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository+<AddProgressMarkerAsync>d__6.MoveNext|auth::prod2|Error AddProgressMarkerAsync : Object reference not set to an instance of an object.|System.NullReferenceException Object reference not set to an instance of an object. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository.<AddProgressMarkerAsync>d__6.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\WorkFlowRepository.cs:line 570}
+2021-06-08 16:21:25.1935|Error|SAF.EnterpriseSolutions.DataAccess.Repository.FabMachineUsageRepository|SAF.EnterpriseSolutions.DataAccess.Repository.FabMachineUsageRepository+<SaveFabMachineEventAsync>d__18.MoveNext|auth::prod2|Error accessing AddFabMachinesAsync Work Flows and timed events : Object reference not set to an instance of an object.|System.NullReferenceException Object reference not set to an instance of an object. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository.<AddProgressMarkerAsync>d__6.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\WorkFlowRepository.cs:line 603
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+at SAF.EnterpriseSolutions.DataAccess.Repository.FabMachineUsageRepository.<SaveFabMachineEventAsync>d__18.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\FabMachineUsageRepository.cs:line 894}
+2021-06-08 16:22:14.5991|Warn|SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository|SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository+<AddProgressMarkerAsync>d__6.MoveNext|auth::prod2|Missing Event Action : CNC Router (AXYZ PanelBuilder).  Not found in luEventActions Table.  Attempted to add it to eventGuid 91450497-429f-4868-82b0-587b511fb457|}
+2021-06-08 16:22:14.6148|Error|SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository|SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository+<AddProgressMarkerAsync>d__6.MoveNext|auth::prod2|Error AddProgressMarkerAsync : Object reference not set to an instance of an object.|System.NullReferenceException Object reference not set to an instance of an object. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository.<AddProgressMarkerAsync>d__6.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\WorkFlowRepository.cs:line 570}
+2021-06-08 16:22:14.6148|Error|SAF.EnterpriseSolutions.DataAccess.Repository.FabMachineUsageRepository|SAF.EnterpriseSolutions.DataAccess.Repository.FabMachineUsageRepository+<SaveFabMachineEventAsync>d__18.MoveNext|auth::prod2|Error accessing AddFabMachinesAsync Work Flows and timed events : Object reference not set to an instance of an object.|System.NullReferenceException Object reference not set to an instance of an object. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository.<AddProgressMarkerAsync>d__6.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\WorkFlowRepository.cs:line 603
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+at SAF.EnterpriseSolutions.DataAccess.Repository.FabMachineUsageRepository.<SaveFabMachineEventAsync>d__18.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\FabMachineUsageRepository.cs:line 894}
+2021-06-08 16:29:33.1521|Warn|SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository|SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository+<AddProgressMarkerAsync>d__6.MoveNext|auth::Prod2|Missing Event Action : Marvel Band Saw.  Not found in luEventActions Table.  Attempted to add it to eventGuid 5a0fe09d-1342-4d4b-9658-cf849f9f3f46|}
+2021-06-08 16:29:33.1521|Error|SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository|SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository+<AddProgressMarkerAsync>d__6.MoveNext|auth::Prod2|Error AddProgressMarkerAsync : Object reference not set to an instance of an object.|System.NullReferenceException Object reference not set to an instance of an object. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository.<AddProgressMarkerAsync>d__6.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\WorkFlowRepository.cs:line 570}
+2021-06-08 16:29:33.1521|Error|SAF.EnterpriseSolutions.DataAccess.Repository.FabMachineUsageRepository|SAF.EnterpriseSolutions.DataAccess.Repository.FabMachineUsageRepository+<SaveFabMachineEventAsync>d__18.MoveNext|auth::Prod2|Error accessing AddFabMachinesAsync Work Flows and timed events : Object reference not set to an instance of an object.|System.NullReferenceException Object reference not set to an instance of an object. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository.<AddProgressMarkerAsync>d__6.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\WorkFlowRepository.cs:line 603
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+at SAF.EnterpriseSolutions.DataAccess.Repository.FabMachineUsageRepository.<SaveFabMachineEventAsync>d__18.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\FabMachineUsageRepository.cs:line 894}
+2021-06-08 18:15:41.8028|Warn|SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository|SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository+<AddProgressMarkerAsync>d__6.MoveNext|auth::prod2|Missing Event Action : Hand Sand / Grind - R.  Not found in luEventActions Table.  Attempted to add it to eventGuid c91fdf64-1ff1-4edf-aedf-4c18a2ac34d8|}
+2021-06-08 18:15:41.8028|Error|SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository|SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository+<AddProgressMarkerAsync>d__6.MoveNext|auth::prod2|Error AddProgressMarkerAsync : Object reference not set to an instance of an object.|System.NullReferenceException Object reference not set to an instance of an object. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository.<AddProgressMarkerAsync>d__6.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\WorkFlowRepository.cs:line 570}
+2021-06-08 18:15:41.8028|Error|SAF.EnterpriseSolutions.DataAccess.Repository.FabMachineUsageRepository|SAF.EnterpriseSolutions.DataAccess.Repository.FabMachineUsageRepository+<SaveFabMachineEventAsync>d__18.MoveNext|auth::prod2|Error accessing AddFabMachinesAsync Work Flows and timed events : Object reference not set to an instance of an object.|System.NullReferenceException Object reference not set to an instance of an object. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository.<AddProgressMarkerAsync>d__6.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\WorkFlowRepository.cs:line 603
+--- End of stack trace from previous location where exception was thrown ---
+at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+at SAF.EnterpriseSolutions.DataAccess.Repository.FabMachineUsageRepository.<SaveFabMachineEventAsync>d__18.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\FabMachineUsageRepository.cs:line 894}
