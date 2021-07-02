@@ -42,8 +42,11 @@
                 const splitIndivError = logs[i].split('|');
                 let error_time = splitIndivError[0];
                 let error_type = splitIndivError[5];
-                const splitForSpec = splitIndivError[6].split('at ');
-                let error_spec = splitForSpec[0];
+                let error_spec = null;
+                if (!(splitIndivError[2].includes("Internal"))) {
+                    const splitForSpec = splitIndivError[6].split('at ');
+                    error_spec = splitForSpec[0];
+                }
                 let error_file = null;
                 let error_line = null;
                 if (logs[i].includes("C:\\agent\\_work\\7\\s\\")) {
