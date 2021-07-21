@@ -1,0 +1,458 @@
+2021-07-01 05:32:12.1658|Error|SAF.EnterpriseSolutions.DataAccess.Repository.RackRepository|SAF.EnterpriseSolutions.DataAccess.Repository.RackRepository+<SaveRackEventAsync>d__23.MoveNext|auth::prod2|Error accessing SaveRackEventAsync : An error occurred while updating the entries. See the inner exception for details.|System.Data.Entity.Infrastructure.DbUpdateException An error occurred while updating the entries. See the inner exception for details. Void Throw()    at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.DataAccess.UnitOfWork.EfWorkUnit`1.<CommitAsync>d__10.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\UnitOfWork\EfWorkUnit.cs:line 37
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at SAF.EnterpriseSolutions.DataAccess.Repository.RackRepository.<SaveRackEventAsync>d__23.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\RackRepository.cs:line 2234|UpdateException An error occurred while updating the entries. See the inner exception for details. Void MoveNext()    at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.<UpdateAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Data.Entity.Core.Objects.ObjectContext.<ExecuteInTransactionAsync>d__3d`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStoreAsync>d__39.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<ExecuteAsyncImplementation>d__9`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesInternalAsync>d__31.MoveNext()|SqlException Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding. Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, String endMethod, Boolean isInternal)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.<UpdateAsync>d__0.MoveNext()|Win32Exception The wait operation timed out  }
+2021-07-01 05:32:12.1658|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.RackController|SAF.EnterpriseSolutions.Web.Services.Controllers.RackController+<SaveRackEvent>d__10.MoveNext|auth::prod2|Error api/Rack/saverackevent: An error occurred while updating the entries. See the inner exception for details.|System.Data.Entity.Infrastructure.DbUpdateException An error occurred while updating the entries. See the inner exception for details. Void Throw()    at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.DataAccess.UnitOfWork.EfWorkUnit`1.<CommitAsync>d__10.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\UnitOfWork\EfWorkUnit.cs:line 37
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at SAF.EnterpriseSolutions.DataAccess.Repository.RackRepository.<SaveRackEventAsync>d__23.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\RackRepository.cs:line 2264
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.RackController.<SaveRackEvent>d__10.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\RackController.cs:line 176|UpdateException An error occurred while updating the entries. See the inner exception for details. Void MoveNext()    at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.<UpdateAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Data.Entity.Core.Objects.ObjectContext.<ExecuteInTransactionAsync>d__3d`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStoreAsync>d__39.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<ExecuteAsyncImplementation>d__9`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesInternalAsync>d__31.MoveNext()|SqlException Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding. Void OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, String endMethod, Boolean isInternal)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.<UpdateAsync>d__0.MoveNext()|Win32Exception The wait operation timed out  }
+2021-07-01 08:03:19.0230|Error|SAF.EnterpriseSolutions.DataAccess.Repository.ComplaintRepository|SAF.EnterpriseSolutions.DataAccess.Repository.ComplaintRepository+<GetComplaintDetails>d__6.MoveNext|auth::rcl|Error accessing GetComplaintDetails list: Object reference not set to an instance of an object.|System.NullReferenceException Object reference not set to an instance of an object. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.ComplaintRepository.<GetComplaintDetails>d__6.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplaintRepository.cs:line 249}
+2021-07-01 08:03:19.0230|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplaintController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplaintController+<GetComplaintDetails>d__5.MoveNext|auth::rcl|Error api/getcomplaintdetails: Object reference not set to an instance of an object.|System.NullReferenceException Object reference not set to an instance of an object. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.ComplaintRepository.<GetComplaintDetails>d__6.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplaintRepository.cs:line 392
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplaintController.<GetComplaintDetails>d__5.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplaintController.cs:line 72}
+2021-07-01 08:33:43.2336|Error|SAF.EnterpriseSolutions.DataAccess.Repository.InvoiceRepository|SAF.EnterpriseSolutions.DataAccess.Repository.InvoiceRepository+<SaveTrialInvoice>d__63.MoveNext|auth::kjs|Error executing SaveTrialInvoice : Value cannot be null.
+Parameter name: key|System.ArgumentNullException Value cannot be null.
+Parameter name: key Void ThrowArgumentNullException(System.ExceptionArgument)    at System.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at SAF.EnterpriseSolutions.DataAccess.Repository.InvoiceRepository.<SaveTrialInvoice>d__63.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\InvoiceRepository.cs:line 5434}
+2021-07-01 08:33:43.2492|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.InvoiceController|SAF.EnterpriseSolutions.Web.Services.Controllers.InvoiceController+<SaveTrialInvoice>d__19.MoveNext|auth::kjs|Error api/savetrialinvoice: Value cannot be null.
+Parameter name: key|System.ArgumentNullException Value cannot be null.
+Parameter name: key Void ThrowArgumentNullException(System.ExceptionArgument)    at System.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at SAF.EnterpriseSolutions.DataAccess.Repository.InvoiceRepository.<SaveTrialInvoice>d__63.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\InvoiceRepository.cs:line 6515
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.InvoiceController.<SaveTrialInvoice>d__19.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\InvoiceController.cs:line 502}
+2021-07-01 08:55:46.7494|Error|SAF.EnterpriseSolutions.DataAccess.Repository.ComplaintRepository|SAF.EnterpriseSolutions.DataAccess.Repository.ComplaintRepository+<GetComplaintDetails>d__6.MoveNext|auth::rcl|Error accessing GetComplaintDetails list: Object reference not set to an instance of an object.|System.NullReferenceException Object reference not set to an instance of an object. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.ComplaintRepository.<GetComplaintDetails>d__6.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplaintRepository.cs:line 249}
+2021-07-01 08:55:46.7494|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplaintController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplaintController+<GetComplaintDetails>d__5.MoveNext|auth::rcl|Error api/getcomplaintdetails: Object reference not set to an instance of an object.|System.NullReferenceException Object reference not set to an instance of an object. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.ComplaintRepository.<GetComplaintDetails>d__6.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplaintRepository.cs:line 392
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplaintController.<GetComplaintDetails>d__5.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplaintController.cs:line 72}
+2021-07-01 10:27:30.8598|Warn|SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository|SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository+<AddProgressMarkerAsync>d__6.MoveNext|auth::prod2|Missing Event Action : Hand Sand / Grind - R.  Not found in luEventActions Table.  Attempted to add it to eventGuid e96df494-1ddd-4024-b4e2-eb068fb3f8a6|}
+2021-07-01 10:27:30.8598|Error|SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository|SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository+<AddProgressMarkerAsync>d__6.MoveNext|auth::prod2|Error AddProgressMarkerAsync : Object reference not set to an instance of an object.|System.NullReferenceException Object reference not set to an instance of an object. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository.<AddProgressMarkerAsync>d__6.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\WorkFlowRepository.cs:line 570}
+2021-07-01 10:27:30.8598|Error|SAF.EnterpriseSolutions.DataAccess.Repository.FabMachineUsageRepository|SAF.EnterpriseSolutions.DataAccess.Repository.FabMachineUsageRepository+<SaveFabMachineEventAsync>d__18.MoveNext|auth::prod2|Error accessing AddFabMachinesAsync Work Flows and timed events : Object reference not set to an instance of an object.|System.NullReferenceException Object reference not set to an instance of an object. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.WorkFlowRepository.<AddProgressMarkerAsync>d__6.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\WorkFlowRepository.cs:line 603
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at SAF.EnterpriseSolutions.DataAccess.Repository.FabMachineUsageRepository.<SaveFabMachineEventAsync>d__18.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\FabMachineUsageRepository.cs:line 894}
+2021-07-01 10:42:42.7592|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<CompassIVFiles>d__21.MoveNext|auth::hnc|Error api/compassIVFiles: Sequence contains no elements|System.InvalidOperationException Sequence contains no elements TSource First[TSource](System.Collections.Generic.IEnumerable`1[TSource])    at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<CompassIVFiles>d__1.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository2.cs:line 352
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<CompassIVFiles>d__21.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 634}
+2021-07-01 10:43:04.0334|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<CompassIVFiles>d__21.MoveNext|auth::hnc|Error api/compassIVFiles: The process cannot access the file '247380.bat' because it is being used by another process.|System.IO.IOException The process cannot access the file '247380.bat' because it is being used by another process. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<CompassIVFiles>d__1.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository2.cs:line 70
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<CompassIVFiles>d__21.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 634}
+2021-07-01 10:43:15.2092|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<CompassIVFiles>d__21.MoveNext|auth::hnc|Error api/compassIVFiles: Sequence contains no elements|System.InvalidOperationException Sequence contains no elements TSource First[TSource](System.Collections.Generic.IEnumerable`1[TSource])    at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<CompassIVFiles>d__1.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository2.cs:line 352
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<CompassIVFiles>d__21.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 634}
+2021-07-01 10:43:33.5949|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<CompassIVFiles>d__21.MoveNext|auth::hnc|Error api/compassIVFiles: The process cannot access the file '247380.bat' because it is being used by another process.|System.IO.IOException The process cannot access the file '247380.bat' because it is being used by another process. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<CompassIVFiles>d__1.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository2.cs:line 70
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<CompassIVFiles>d__21.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 634}
+2021-07-01 10:43:38.9281|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<CompassIVFiles>d__21.MoveNext|auth::hnc|Error api/compassIVFiles: The process cannot access the file '247380.bat' because it is being used by another process.|System.IO.IOException The process cannot access the file '247380.bat' because it is being used by another process. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<CompassIVFiles>d__1.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository2.cs:line 70
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<CompassIVFiles>d__21.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 634}
+2021-07-01 10:43:42.2925|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<CompassIVFiles>d__21.MoveNext|auth::hnc|Error api/compassIVFiles: Sequence contains no elements|System.InvalidOperationException Sequence contains no elements TSource First[TSource](System.Collections.Generic.IEnumerable`1[TSource])    at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<CompassIVFiles>d__1.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository2.cs:line 352
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<CompassIVFiles>d__21.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 634}
+2021-07-01 10:43:45.4850|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<CompassIVFiles>d__21.MoveNext|auth::hnc|Error api/compassIVFiles: The process cannot access the file '247380.bat' because it is being used by another process.|System.IO.IOException The process cannot access the file '247380.bat' because it is being used by another process. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<CompassIVFiles>d__1.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository2.cs:line 70
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<CompassIVFiles>d__21.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 634}
+2021-07-01 10:43:48.7081|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<CompassIVFiles>d__21.MoveNext|auth::hnc|Error api/compassIVFiles: The process cannot access the file '247380.bat' because it is being used by another process.|System.IO.IOException The process cannot access the file '247380.bat' because it is being used by another process. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<CompassIVFiles>d__1.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository2.cs:line 70
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<CompassIVFiles>d__21.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 634}
+2021-07-01 10:43:55.7000|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<CompassIVFiles>d__21.MoveNext|auth::hnc|Error api/compassIVFiles: The process cannot access the file '247380.bat' because it is being used by another process.|System.IO.IOException The process cannot access the file '247380.bat' because it is being used by another process. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<CompassIVFiles>d__1.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository2.cs:line 70
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<CompassIVFiles>d__21.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 634}
+2021-07-01 11:59:15.2882|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<CompassIVFiles>d__21.MoveNext|auth::hnc|Error api/compassIVFiles: Sequence contains no elements|System.InvalidOperationException Sequence contains no elements TSource First[TSource](System.Collections.Generic.IEnumerable`1[TSource])    at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<CompassIVFiles>d__1.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository2.cs:line 352
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<CompassIVFiles>d__21.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 634}
+2021-07-01 12:03:29.1502|Error|SAF.EnterpriseSolutions.DataAccess.Repository.CustomerRepository|SAF.EnterpriseSolutions.DataAccess.Repository.CustomerRepository+<ModifyContactAsync>d__19.MoveNext|auth::bkc|Error ModifyContactAsync : An error occurred while updating the entries. See the inner exception for details.|System.Data.Entity.Infrastructure.DbUpdateException An error occurred while updating the entries. See the inner exception for details. Void Throw()    at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.DataAccess.Repository.CustomerRepository.<ModifyContactAsync>d__19.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\CustomerRepository.cs:line 1642|UpdateException An error occurred while updating the entries. See the inner exception for details. Void MoveNext()    at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.<UpdateAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Data.Entity.Core.Objects.ObjectContext.<ExecuteInTransactionAsync>d__3d`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStoreAsync>d__39.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<ExecuteAsyncImplementation>d__9`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesInternalAsync>d__31.MoveNext()|SqlException Cannot insert duplicate key row in object 'dbo.Contacts' with unique index 'IX_tblContacts_EMail'. The duplicate key value is (paulrudder@bradysglass.com).
+The statement has been terminated. System.Data.Common.DbDataReader <ExecuteDbDataReaderAsync>b__180_0(System.Threading.Tasks.Task`1[System.Data.SqlClient.SqlDataReader])    at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__180_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.<UpdateAsync>d__0.MoveNext()}
+2021-07-01 12:05:49.5067|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<CompassIVFiles>d__21.MoveNext|auth::hnc|Error api/compassIVFiles: Sequence contains no elements|System.InvalidOperationException Sequence contains no elements TSource First[TSource](System.Collections.Generic.IEnumerable`1[TSource])    at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<CompassIVFiles>d__1.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository2.cs:line 352
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<CompassIVFiles>d__21.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 634}
+2021-07-01 12:05:51.6810|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<CompassIVFiles>d__21.MoveNext|auth::hnc|Error api/compassIVFiles: The process cannot access the file '247405.bat' because it is being used by another process.|System.IO.IOException The process cannot access the file '247405.bat' because it is being used by another process. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<CompassIVFiles>d__1.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository2.cs:line 70
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<CompassIVFiles>d__21.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 634}
+2021-07-01 12:05:54.3026|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<CompassIVFiles>d__21.MoveNext|auth::hnc|Error api/compassIVFiles: The process cannot access the file '247405.bat' because it is being used by another process.|System.IO.IOException The process cannot access the file '247405.bat' because it is being used by another process. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<CompassIVFiles>d__1.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository2.cs:line 70
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<CompassIVFiles>d__21.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 634}
+2021-07-01 12:05:56.1476|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<CompassIVFiles>d__21.MoveNext|auth::hnc|Error api/compassIVFiles: Sequence contains no elements|System.InvalidOperationException Sequence contains no elements TSource First[TSource](System.Collections.Generic.IEnumerable`1[TSource])    at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<CompassIVFiles>d__1.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository2.cs:line 352
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<CompassIVFiles>d__21.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 634}
+2021-07-01 12:05:57.6032|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<CompassIVFiles>d__21.MoveNext|auth::hnc|Error api/compassIVFiles: The process cannot access the file '247405.bat' because it is being used by another process.|System.IO.IOException The process cannot access the file '247405.bat' because it is being used by another process. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<CompassIVFiles>d__1.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository2.cs:line 70
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<CompassIVFiles>d__21.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 634}
+2021-07-01 12:05:59.3713|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<CompassIVFiles>d__21.MoveNext|auth::hnc|Error api/compassIVFiles: The process cannot access the file '247405.bat' because it is being used by another process.|System.IO.IOException The process cannot access the file '247405.bat' because it is being used by another process. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<CompassIVFiles>d__1.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository2.cs:line 70
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<CompassIVFiles>d__21.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 634}
+2021-07-01 12:06:00.6850|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<CompassIVFiles>d__21.MoveNext|auth::hnc|Error api/compassIVFiles: The process cannot access the file '247405.bat' because it is being used by another process.|System.IO.IOException The process cannot access the file '247405.bat' because it is being used by another process. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<CompassIVFiles>d__1.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository2.cs:line 70
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<CompassIVFiles>d__21.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 634}
+2021-07-01 12:06:02.3894|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<CompassIVFiles>d__21.MoveNext|auth::hnc|Error api/compassIVFiles: The process cannot access the file '247405.bat' because it is being used by another process.|System.IO.IOException The process cannot access the file '247405.bat' because it is being used by another process. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<CompassIVFiles>d__1.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository2.cs:line 70
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<CompassIVFiles>d__21.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 634}
+2021-07-01 12:06:04.0794|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<CompassIVFiles>d__21.MoveNext|auth::hnc|Error api/compassIVFiles: The process cannot access the file '247405.bat' because it is being used by another process.|System.IO.IOException The process cannot access the file '247405.bat' because it is being used by another process. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<CompassIVFiles>d__1.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository2.cs:line 70
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<CompassIVFiles>d__21.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 634}
+2021-07-01 12:06:06.2381|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<CompassIVFiles>d__21.MoveNext|auth::hnc|Error api/compassIVFiles: The process cannot access the file '247405.bat' because it is being used by another process.|System.IO.IOException The process cannot access the file '247405.bat' because it is being used by another process. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<CompassIVFiles>d__1.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository2.cs:line 70
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<CompassIVFiles>d__21.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 634}
+2021-07-01 12:06:07.6144|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<CompassIVFiles>d__21.MoveNext|auth::hnc|Error api/compassIVFiles: The process cannot access the file '247405.bat' because it is being used by another process.|System.IO.IOException The process cannot access the file '247405.bat' because it is being used by another process. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<CompassIVFiles>d__1.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository2.cs:line 70
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<CompassIVFiles>d__21.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 634}
+2021-07-01 12:06:09.1793|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<CompassIVFiles>d__21.MoveNext|auth::hnc|Error api/compassIVFiles: The process cannot access the file '247405.bat' because it is being used by another process.|System.IO.IOException The process cannot access the file '247405.bat' because it is being used by another process. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<CompassIVFiles>d__1.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository2.cs:line 70
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<CompassIVFiles>d__21.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 634}
+2021-07-01 12:06:10.8537|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<CompassIVFiles>d__21.MoveNext|auth::hnc|Error api/compassIVFiles: The process cannot access the file '247405.bat' because it is being used by another process.|System.IO.IOException The process cannot access the file '247405.bat' because it is being used by another process. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<CompassIVFiles>d__1.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository2.cs:line 70
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<CompassIVFiles>d__21.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 634}
+2021-07-01 12:06:12.4812|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<CompassIVFiles>d__21.MoveNext|auth::hnc|Error api/compassIVFiles: The process cannot access the file '247405.bat' because it is being used by another process.|System.IO.IOException The process cannot access the file '247405.bat' because it is being used by another process. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<CompassIVFiles>d__1.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository2.cs:line 70
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<CompassIVFiles>d__21.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 634}
+2021-07-01 12:06:13.9204|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<CompassIVFiles>d__21.MoveNext|auth::hnc|Error api/compassIVFiles: The process cannot access the file '247405.bat' because it is being used by another process.|System.IO.IOException The process cannot access the file '247405.bat' because it is being used by another process. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<CompassIVFiles>d__1.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository2.cs:line 70
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<CompassIVFiles>d__21.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 634}
+2021-07-01 12:06:15.2354|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<CompassIVFiles>d__21.MoveNext|auth::hnc|Error api/compassIVFiles: The process cannot access the file '247405.bat' because it is being used by another process.|System.IO.IOException The process cannot access the file '247405.bat' because it is being used by another process. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<CompassIVFiles>d__1.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository2.cs:line 70
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<CompassIVFiles>d__21.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 634}
+2021-07-01 12:06:16.7068|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<CompassIVFiles>d__21.MoveNext|auth::hnc|Error api/compassIVFiles: The process cannot access the file '247405.bat' because it is being used by another process.|System.IO.IOException The process cannot access the file '247405.bat' because it is being used by another process. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<CompassIVFiles>d__1.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository2.cs:line 70
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<CompassIVFiles>d__21.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 634}
+2021-07-01 12:06:18.2693|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<CompassIVFiles>d__21.MoveNext|auth::hnc|Error api/compassIVFiles: The process cannot access the file '247405.bat' because it is being used by another process.|System.IO.IOException The process cannot access the file '247405.bat' because it is being used by another process. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<CompassIVFiles>d__1.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository2.cs:line 70
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<CompassIVFiles>d__21.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 634}
+2021-07-01 12:06:19.7405|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<CompassIVFiles>d__21.MoveNext|auth::hnc|Error api/compassIVFiles: Sequence contains no elements|System.InvalidOperationException Sequence contains no elements TSource First[TSource](System.Collections.Generic.IEnumerable`1[TSource])    at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<CompassIVFiles>d__1.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository2.cs:line 352
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<CompassIVFiles>d__21.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 634}
+2021-07-01 12:06:20.8343|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController|SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController+<CompassIVFiles>d__21.MoveNext|auth::hnc|Error api/compassIVFiles: The process cannot access the file '247405.bat' because it is being used by another process.|System.IO.IOException The process cannot access the file '247405.bat' because it is being used by another process. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<CompassIVFiles>d__1.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository2.cs:line 70
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.ComplexFabQuoteController.<CompassIVFiles>d__21.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\ComplexFabQuoteController.cs:line 634}
+2021-07-01 12:29:52.3391|Error|SAF.EnterpriseSolutions.DataAccess.Repository.InvOrderRepository|SAF.EnterpriseSolutions.DataAccess.Repository.InvOrderRepository+<ModifyWorkFlowAsync>d__7.MoveNext|auth::kjs|Error ModifyWorkFlowAsync : Invalid shop order number.|System.Exception Invalid shop order number. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.InvOrderRepository.<ModifyWorkFlowAsync>d__7.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\InvOrderRepository.cs:line 819}
+2021-07-01 12:29:52.3391|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.InvOrderController|SAF.EnterpriseSolutions.Web.Services.Controllers.InvOrderController+<ModifyWorkFlow>d__8.MoveNext|auth::kjs|Error api/InvOrder/ModifyWorkFlow: Invalid shop order number.|System.Exception Invalid shop order number. Void MoveNext()    at SAF.EnterpriseSolutions.DataAccess.Repository.InvOrderRepository.<ModifyWorkFlowAsync>d__7.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\InvOrderRepository.cs:line 861
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.InvOrderController.<ModifyWorkFlow>d__8.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\InvOrderController.cs:line 111}
+2021-07-01 12:36:42.5741|Error|SAF.EnterpriseSolutions.Business.PackingUnit.PackingUnitService|SAF.EnterpriseSolutions.Business.PackingUnit.PackingUnitService+<GetPackingUnitByIdAsync>d__17.MoveNext|auth::tpm|Error GetPackingUnitByIdAsync : Object reference not set to an instance of an object.|System.NullReferenceException Object reference not set to an instance of an object. Void MoveNext()    at SAF.EnterpriseSolutions.Business.PackingUnit.PackingUnitService.<GetPackingUnitByIdAsync>d__17.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Business\PackingUnit\PackingUnitService.cs:line 92}
+2021-07-01 12:36:42.5741|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.PackingUnitController|SAF.EnterpriseSolutions.Web.Services.Controllers.PackingUnitController+<PackingUnitDetail>d__7.MoveNext|auth::tpm|Error api/PackingUnit/Detail: Object reference not set to an instance of an object.|System.NullReferenceException Object reference not set to an instance of an object. Void MoveNext()    at SAF.EnterpriseSolutions.Business.PackingUnit.PackingUnitService.<GetPackingUnitByIdAsync>d__17.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Business\PackingUnit\PackingUnitService.cs:line 385
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.PackingUnitController.<PackingUnitDetail>d__7.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\PackingUnitController.cs:line 65}
+2021-07-01 12:36:45.0219|Error|SAF.EnterpriseSolutions.Business.PackingUnit.PackingUnitService|SAF.EnterpriseSolutions.Business.PackingUnit.PackingUnitService+<GetPackingUnitByIdAsync>d__17.MoveNext|auth::tpm|Error GetPackingUnitByIdAsync : Object reference not set to an instance of an object.|System.NullReferenceException Object reference not set to an instance of an object. Void MoveNext()    at SAF.EnterpriseSolutions.Business.PackingUnit.PackingUnitService.<GetPackingUnitByIdAsync>d__17.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Business\PackingUnit\PackingUnitService.cs:line 92}
+2021-07-01 12:36:45.0219|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.PackingUnitController|SAF.EnterpriseSolutions.Web.Services.Controllers.PackingUnitController+<PackingUnitDetail>d__7.MoveNext|auth::tpm|Error api/PackingUnit/Detail: Object reference not set to an instance of an object.|System.NullReferenceException Object reference not set to an instance of an object. Void MoveNext()    at SAF.EnterpriseSolutions.Business.PackingUnit.PackingUnitService.<GetPackingUnitByIdAsync>d__17.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Business\PackingUnit\PackingUnitService.cs:line 385
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.PackingUnitController.<PackingUnitDetail>d__7.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\PackingUnitController.cs:line 65}
+2021-07-01 13:40:35.1698|Error|SAF.EnterpriseSolutions.DataAccess.Repository.OrderOriginRepository|SAF.EnterpriseSolutions.DataAccess.Repository.OrderOriginRepository+<GetAsync>d__27.MoveNext|auth::Bkc|Error GetAsync : An error occurred while executing the command definition. See the inner exception for details.|System.Data.Entity.Core.EntityCommandExecutionException An error occurred while executing the command definition. See the inner exception for details. Void MoveNext()    at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.<ExecuteStoreCommandsAsync>d__c.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.<ExecuteAsync>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Data.Entity.Utilities.TaskExtensions.CultureAwaiter`1.GetResult()
+   at System.Data.Entity.Core.Objects.ObjectContext.<ExecuteInTransactionAsync>d__3d`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<ExecuteAsyncImplementation>d__9`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Data.Entity.Utilities.TaskExtensions.CultureAwaiter`1.GetResult()
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<GetResultsAsync>d__e.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Data.Entity.Utilities.TaskExtensions.CultureAwaiter`1.GetResult()
+   at System.Data.Entity.Internal.LazyAsyncEnumerator`1.<FirstMoveNextAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Data.Entity.Infrastructure.IDbAsyncEnumerableExtensions.<ForEachAsync>d__5`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at SAF.EnterpriseSolutions.DataAccess.Repository.OrderOriginRepository.<GetAsync>d__27.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\OrderOriginRepository.cs:line 1086|SqlException Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding. System.Data.Common.DbDataReader <ExecuteDbDataReaderAsync>b__180_0(System.Threading.Tasks.Task`1[System.Data.SqlClient.SqlDataReader])    at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__180_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.<ExecuteStoreCommandsAsync>d__c.MoveNext()|Win32Exception The wait operation timed out  }
+2021-07-01 13:40:35.1698|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.OrderOriginController|SAF.EnterpriseSolutions.Web.Services.Controllers.OrderOriginController+<Get>d__5.MoveNext|auth::Bkc|Error api/OrderOrigin: An error occurred while executing the command definition. See the inner exception for details.|System.Data.Entity.Core.EntityCommandExecutionException An error occurred while executing the command definition. See the inner exception for details. Void MoveNext()    at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.<ExecuteStoreCommandsAsync>d__c.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Data.Entity.Core.Objects.Internal.ObjectQueryExecutionPlan.<ExecuteAsync>d__0`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Data.Entity.Utilities.TaskExtensions.CultureAwaiter`1.GetResult()
+   at System.Data.Entity.Core.Objects.ObjectContext.<ExecuteInTransactionAsync>d__3d`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<ExecuteAsyncImplementation>d__9`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Data.Entity.Utilities.TaskExtensions.CultureAwaiter`1.GetResult()
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<GetResultsAsync>d__e.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Data.Entity.Utilities.TaskExtensions.CultureAwaiter`1.GetResult()
+   at System.Data.Entity.Internal.LazyAsyncEnumerator`1.<FirstMoveNextAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Data.Entity.Infrastructure.IDbAsyncEnumerableExtensions.<ForEachAsync>d__5`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at SAF.EnterpriseSolutions.DataAccess.Repository.OrderOriginRepository.<GetAsync>d__27.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\OrderOriginRepository.cs:line 1135
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.OrderOriginController.<Get>d__5.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\OrderOriginController.cs:line 70|SqlException Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding. System.Data.Common.DbDataReader <ExecuteDbDataReaderAsync>b__180_0(System.Threading.Tasks.Task`1[System.Data.SqlClient.SqlDataReader])    at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__180_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityCommandDefinition.<ExecuteStoreCommandsAsync>d__c.MoveNext()|Win32Exception The wait operation timed out  }
+2021-07-01 14:43:23.0642|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.RackController|SAF.EnterpriseSolutions.Web.Services.Controllers.RackController+<GetRackDetails>d__5.MoveNext|auth::prod2|Error api/Rack/getrackdetails: Guid should contain 32 digits with 4 dashes (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|System.FormatException Guid should contain 32 digits with 4 dashes (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx). Void SetFailure(ParseFailureKind, System.String, System.Object, System.String, System.Exception)    at System.Guid.GuidResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument, String failureArgumentName, Exception innerException)
+   at System.Guid.TryParseGuidWithNoStyle(String guidString, GuidResult& result)
+   at System.Guid.TryParseGuid(String g, GuidStyles flags, GuidResult& result)
+   at System.Guid..ctor(String g)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.RackController.<GetRackDetails>d__5.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\RackController.cs:line 65}
+2021-07-01 14:43:41.5387|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.RackController|SAF.EnterpriseSolutions.Web.Services.Controllers.RackController+<GetRackDetails>d__5.MoveNext|auth::prod2|Error api/Rack/getrackdetails: Guid should contain 32 digits with 4 dashes (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).|System.FormatException Guid should contain 32 digits with 4 dashes (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx). Void SetFailure(ParseFailureKind, System.String, System.Object, System.String, System.Exception)    at System.Guid.GuidResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument, String failureArgumentName, Exception innerException)
+   at System.Guid.TryParseGuidWithNoStyle(String guidString, GuidResult& result)
+   at System.Guid.TryParseGuid(String g, GuidStyles flags, GuidResult& result)
+   at System.Guid..ctor(String g)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.RackController.<GetRackDetails>d__5.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\RackController.cs:line 65}
+2021-07-01 14:50:03.4824|Error|SAF.EnterpriseSolutions.Business.PackingUnit.PackingUnitService|SAF.EnterpriseSolutions.Business.PackingUnit.PackingUnitService+<GetPackingUnitByIdAsync>d__17.MoveNext|auth::prod2|Error GetPackingUnitByIdAsync : Object reference not set to an instance of an object.|System.NullReferenceException Object reference not set to an instance of an object. Void MoveNext()    at SAF.EnterpriseSolutions.Business.PackingUnit.PackingUnitService.<GetPackingUnitByIdAsync>d__17.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Business\PackingUnit\PackingUnitService.cs:line 92}
+2021-07-01 14:50:03.4824|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.PackingUnitController|SAF.EnterpriseSolutions.Web.Services.Controllers.PackingUnitController+<PackingUnitDetail>d__7.MoveNext|auth::prod2|Error api/PackingUnit/Detail: Object reference not set to an instance of an object.|System.NullReferenceException Object reference not set to an instance of an object. Void MoveNext()    at SAF.EnterpriseSolutions.Business.PackingUnit.PackingUnitService.<GetPackingUnitByIdAsync>d__17.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Business\PackingUnit\PackingUnitService.cs:line 385
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.PackingUnitController.<PackingUnitDetail>d__7.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\PackingUnitController.cs:line 65}
+2021-07-01 14:57:29.2687|Error|SAF.EnterpriseSolutions.Business.PackingUnit.PackingUnitService|SAF.EnterpriseSolutions.Business.PackingUnit.PackingUnitService+<GetPackingUnitByIdAsync>d__17.MoveNext|auth::prod2|Error GetPackingUnitByIdAsync : Object reference not set to an instance of an object.|System.NullReferenceException Object reference not set to an instance of an object. Void MoveNext()    at SAF.EnterpriseSolutions.Business.PackingUnit.PackingUnitService.<GetPackingUnitByIdAsync>d__17.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Business\PackingUnit\PackingUnitService.cs:line 92}
+2021-07-01 14:57:29.2687|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.PackingUnitController|SAF.EnterpriseSolutions.Web.Services.Controllers.PackingUnitController+<PackingUnitDetail>d__7.MoveNext|auth::prod2|Error api/PackingUnit/Detail: Object reference not set to an instance of an object.|System.NullReferenceException Object reference not set to an instance of an object. Void MoveNext()    at SAF.EnterpriseSolutions.Business.PackingUnit.PackingUnitService.<GetPackingUnitByIdAsync>d__17.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Business\PackingUnit\PackingUnitService.cs:line 385
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.PackingUnitController.<PackingUnitDetail>d__7.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\PackingUnitController.cs:line 65}
+2021-07-01 16:52:26.7414|Error|SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository|SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository+<SaveCutMethods>d__29.MoveNext|auth::klp|Error SaveCutSchedules: A task was canceled.|System.Threading.Tasks.TaskCanceledException A task was canceled. Void ThrowForNonSuccess(System.Threading.Tasks.Task)    at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<SaveCutMethods>d__29.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository.cs:line 2453}
+2021-07-01 16:52:26.7571|Error|SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository|SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository+<RecalcPricing>d__28.MoveNext|auth::klp|Error RecalcPricing: A task was canceled.|System.Threading.Tasks.TaskCanceledException A task was canceled. Void ThrowForNonSuccess(System.Threading.Tasks.Task)    at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<SaveCutMethods>d__29.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository.cs:line 2511
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<RecalcPricing>d__28.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository.cs:line 2391}
+2021-07-01 16:52:26.7571|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.QuoteOptimizeController|SAF.EnterpriseSolutions.Web.Services.Controllers.QuoteOptimizeController+<Optimize>d__7.MoveNext|auth::klp|Error api/QuoteOptimize/optimize: A task was canceled.|System.Threading.Tasks.TaskCanceledException A task was canceled. Void ThrowForNonSuccess(System.Threading.Tasks.Task)    at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<SaveCutMethods>d__29.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository.cs:line 2511
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at SAF.EnterpriseSolutions.DataAccess.Repository.ComplexFabQuoteRepository.<RecalcPricing>d__28.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\ComplexFabQuoteRepository.cs:line 2429
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.QuoteOptimizeController.<Optimize>d__7.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\QuoteOptimizeController.cs:line 76}
+2021-07-01 18:07:51.8384|Error|SAF.EnterpriseSolutions.Web.Services.Controllers.FabMachineUsageController|SAF.EnterpriseSolutions.Web.Services.Controllers.FabMachineUsageController+<SaveFabMachineEvent>d__8.MoveNext|auth::njj|Error api/FabMachineUsage/savefabmachineevent: There was an error reflecting type 'SAF.EnterpriseSolutions.Domain.FabMachineUsage.FabMachineAddData'.|System.InvalidOperationException There was an error reflecting type 'SAF.EnterpriseSolutions.Domain.FabMachineUsage.FabMachineAddData'. System.Xml.Serialization.TypeMapping ImportTypeMapping(System.Xml.Serialization.TypeModel, System.String, ImportContext, System.String, System.Xml.Serialization.XmlAttributes, Boolean, Boolean, System.Xml.Serialization.RecursionLimiter)    at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   at System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
+   at SAF.EnterpriseSolutions.DataAccess.Repository.FabMachineUsageRepository.<SaveFabMachineEventAsync>d__18.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.DataAccess\Repository\FabMachineUsageRepository.cs:line 915
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SAF.EnterpriseSolutions.Web.Services.Controllers.FabMachineUsageController.<SaveFabMachineEvent>d__8.MoveNext() in C:\agent\_work\7\s\SAF.EnterpriseSolutions.Web.Services\Controllers\FabMachineUsageController.cs:line 125|InvalidOperationException Cannot serialize member 'SAF.EnterpriseSolutions.Domain.FabMachineUsage.FabMachineAddData.Equipments' of type 'System.Collections.Generic.IEnumerable`1[[SAF.EnterpriseSolutions.Domain.FabMachineUsage.FabEquipment, SAF.EnterpriseSolutions.Domain, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null]]', see inner exception for more details. Void CheckSupportedMember(System.Xml.Serialization.TypeDesc, System.Reflection.MemberInfo, System.Type)    at System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   at System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   at System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   at System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   at System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)|NotSupportedException Cannot serialize member SAF.EnterpriseSolutions.Domain.FabMachineUsage.FabMachineAddData.Equipments of type System.Collections.Generic.IEnumerable`1[[SAF.EnterpriseSolutions.Domain.FabMachineUsage.FabEquipment, SAF.EnterpriseSolutions.Domain, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null]] because it is an interface.  }

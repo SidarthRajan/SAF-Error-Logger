@@ -1,0 +1,4 @@
+2021-07-01 08:05:44.9906|Error|SAF.EnterpriseSolutions.Web.Internal.Controllers.BaseController|SAF.EnterpriseSolutions.Web.Internal.Controllers.AccountController.Login|IIS APPPOOL\.NET v4.5|Error in Login : Error authenticating user. The user name or password is incorrect.
+
+2021-07-01 20:37:02.2685|Error|SAF.EnterpriseSolutions.Web.Internal.Controllers.BaseController|SAF.EnterpriseSolutions.Web.Internal.Controllers.AccountController.Login|IIS APPPOOL\.NET v4.5|Error in Login : Error authenticating user. The user name or password is incorrect.
+
