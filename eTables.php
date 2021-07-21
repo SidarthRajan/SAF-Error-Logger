@@ -1,6 +1,6 @@
 <?php
 include('config.php');
-$eTables = mysqli_query($link, "SELECT error_date, error_time, error_type, error_spec, error_freq, error_file, error_line FROM error_list;");
+$eTables = mysqli_query($link, "SELECT error_id, error_date, error_time, error_type, error_spec, error_freq, error_file, error_line, error_st FROM error_list;");
 
 
 $eRows = array();

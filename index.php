@@ -36,7 +36,7 @@
             // alert(`File name: ${file.name}`);
         }
         function getStr(viewedData) {
-            let error_date = viewedData.substring(0, 10);
+            let error_date = viewedData.substring(0, 10); 
             const logs = viewedData.split(error_date);
             for (let i = 1; i < logs.length; i++) {
                 const splitIndivError = logs[i].split('|');
@@ -49,18 +49,29 @@
                 }
                 let error_file = null;
                 let error_line = null;
+                let error_trace = null;
                 if (logs[i].includes("C:\\agent\\_work\\7\\s\\")) {
                     const splitForFile1 = logs[i].split('C:\\agent\\_work\\7\\s\\');
                     const splitForFile2 = splitForFile1[1].split(':line');
+                    error_trace = splitIndivError[6];
                     error_file = splitForFile2[0];
                     error_line = splitForFile2[1].substring(0,5);
                 }
                 // console.log("Information: " + error_date + ", " + error_time + ", " + error_type + ", " + error_spec + ", " + error_file + ", " + error_line);
 
                 $.ajax({
+                    type: "GET",
+                    url: 'updateTraces.php',
+                    data: {err_tracing: error_trace},
+                    success: function(response) {
+                        console.log(response);
+                    }
+                });
+
+                $.ajax({
                      type: "GET",
                      url: 'addError.php',
-                     data: {err_date: error_date, err_time: error_time, err_type: error_type, err_spec: error_spec, err_file: error_file, err_line: error_line},
+                     data: {err_date: error_date, err_time: error_time, err_type: error_type, err_spec: error_spec, err_file: error_file, err_line: error_line, err_trace: error_trace},
                      success: function(response) {
                          console.log(response);
                      }
@@ -114,13 +125,15 @@
                             <table class="table table-bordered" id="errTable" width="100%" cellspacing="0">
                                 <thead>
                                 <tr>
+                                    <th>ID</th>
                                     <th>Date</th>
                                     <th>Time</th>
-                                    <th>Type</th>
+                                    <th>Event</th>
                                     <th>Details</th>
                                     <th>Frequency</th>
                                     <th>File</th>
                                     <th>Line</th>
+                                    <th>Trace</th>
                                 </tr>
                                 </thead>
                             </table>
